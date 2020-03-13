@@ -1,0 +1,9 @@
+< HTTP/1.1 200 OK
+< Content-Type: application/json; charset=UTF-8
+{"menuItems": [
+    {"title": "Главная", "url": "home"},
+    {"title": "Сдать", "url": "give-to-rent"},
+    {"title": "Снять", "url": "rent"},
+    {"title": "О сервисе", "url": "about"},
+    {"title": "Блог", "url": "blog"}
+]}
