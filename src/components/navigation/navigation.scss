@@ -1,0 +1,106 @@
+@import "../../main";
+
+.navigation {
+  position: fixed;
+  right: -100%;
+  top: 64px;
+  width: 100%;
+  height: calc(100% - 64px);
+  background-color: $white;
+  transition: .6s ease-out;
+
+  &--opened {
+    right: 0;
+  }
+
+  &__menu {
+    position: relative;
+    width: 100%;
+    max-height: calc(100% - 90px);
+    margin: 0;
+    padding: 0 16px;
+    list-style-type: none;
+    overflow: auto;
+  }
+
+  &__list {
+    position: relative;
+    width: 100%;
+    padding: 24px 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $gray-400;
+    }
+
+    &:last-of-type:after {
+      display: none;
+    }
+  }
+
+  &__link {
+    color: $black;
+    @include Heading-H2;
+    text-decoration: none;
+  }
+
+  &__login-button {
+    position: absolute;
+    left: 16px;
+    bottom: 32px;
+    width: calc(40% - 24px);
+  }
+
+  &__register-button {
+    position: absolute;
+    right: 16px;
+    bottom: 32px;
+    width: calc(60% - 24px);
+  }
+
+  @media (min-width: 1000px) {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    transition: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__menu {
+      width: auto;
+      max-height: none;
+    }
+
+    &__list {
+      display: inline-block;
+      width: auto;
+      padding: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &__link {
+      color: $gray-300;
+      @include Button-text-M;
+      padding: 0 27px;
+    }
+
+    &__login-button {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: auto;
+    }
+  }
+}

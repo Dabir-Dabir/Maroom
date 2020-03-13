@@ -1,0 +1,173 @@
+@mixin H1-Blog {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.44;
+  letter-spacing: 0.5px;
+}
+
+@mixin heading-H3 {
+  font-family: JosefinSans;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.31;
+  letter-spacing: -0.72px;
+}
+
+@mixin Heading-H1 {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.16px;
+}
+
+@mixin Heading-H2 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.12px;
+}
+
+@mixin Body-text-L-Bold {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@mixin Body-text-L-Medium {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+@mixin Body-text-L {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.59;
+}
+
+@mixin body-text-L {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@mixin body-text-M-bold {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+@mixin Heading-H3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.31;
+  letter-spacing: 0.08px;
+}
+
+@mixin Body-text-M-Bold {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@mixin Button-text-M {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.24px;
+}
+
+@mixin Body-text-M-Medium {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin Body-text-M {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin body-text-M {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@mixin body-text-list {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+@mixin Body-text-S-Bold {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@mixin Button-text-S {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.07px;
+}
+
+@mixin Body-text-S-Medium {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin body-text-S-medium {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin Body-text-S {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.59;
+}
+
+@mixin body-text-S {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@mixin Body-text-XS {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin body-text-XS-medium {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@mixin Text {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 1.5;
+}
+

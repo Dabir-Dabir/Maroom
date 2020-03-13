@@ -1,0 +1,83 @@
+@import '../../main';
+
+.hamburger {
+  padding: 15px;
+
+  &__line {
+    position: absolute;
+    height: 3px;
+    background-color: $black;
+  }
+
+  &__line1 {
+    right: 7px;
+    top: 8px;
+    width: 12px;
+    transition: .1s .4s;
+  }
+
+  &__line2 {
+    right: 7px;
+    top: 14px;
+    width: 15px;
+    transition: .3s .3s ease-out;
+  }
+
+  &__line3 {
+    right: 7px;
+    top: 20px;
+    width: 10px;
+    transition: .2s .5s;
+  }
+
+  .hamburger__line4 {
+    transform-origin: left;
+    left: 4px;
+    top: 2px;
+    width: 0;
+    transform: rotate(45deg);
+    transition: .3s .2s ease-out;
+  }
+
+  .hamburger__line5 {
+    transform-origin: right;
+    right: 4px;
+    top: 2px;
+    width: 0;
+    transform: rotate(-45deg);
+    transition: .3s ease-out;
+  }
+
+  &--opened {
+
+    .hamburger__line1 {
+      width: 0;
+      transition: .1s .1s;
+    }
+
+    .hamburger__line2 {
+      width: 0;
+      transition: .2s .2s ease-in;
+    }
+
+    .hamburger__line3 {
+      width: 0;
+      transition: .3s;
+    }
+
+    .hamburger__line4 {
+      left: 8.5px;
+      top: 7px;
+      width: 19px;
+      transition: .2s .5s ease-out;
+    }
+
+    .hamburger__line5 {
+      right: 8.5px;
+      top: 7px;
+      width: 19px;
+      transition: .2s .7s ease-out;
+    }
+
+  }
+}
