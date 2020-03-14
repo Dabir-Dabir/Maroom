@@ -1,6 +1,5 @@
 import React from "react";
 import './logo.scss';
-import DesktopImage from './maroom_color.png';
 
 const Logo = () => {
     return (
@@ -18,7 +17,7 @@ const Logo = () => {
                     </clipPath>
                 </defs>
             </svg>
-            <img src={DesktopImage} alt="Maroom"
+            <img src="https://i.imgur.com/h5sS9tF.png" alt="Maroom"
                  className="logo__desktop-img d-none d-md-block"/>
         </a>
     );

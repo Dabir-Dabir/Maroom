@@ -29,9 +29,7 @@ const Main = () => {
                 </div>
                 <aside className="home-header__right-side d-none d-md-block">
                     <img className="home-header__background-image"
-                         src="/public/images/rectangle-3-2.png"
-                         srcSet="/public/images/rectangle-3-2@2x.png 2x,
-                                 /public/images/rectangle-3-2@3x.png 3x"/>
+                         src="https://i.imgur.com/Vmlo31w.png"/>
                 </aside>
             </header>
         </main>
