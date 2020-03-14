@@ -1,52 +1,58 @@
 import React, {Component} from "react";
 import './navigation.scss';
 import MockyService from '../../services/mocky-service';
+import ErrorIndicator from '../error-indicator'
 
 export default class Navigation extends Component {
 
     mockyService = new MockyService();
 
+    state = {
+        links: []
+    };
+
     constructor(props) {
         super(props);
-        this.state = {
-            links: []
-        };
+    }
+
+    componentDidMount() {
         this.getMenuItems();
     }
 
+    onMenuItemsLoaded = (menuItems) => {
+        this.setState({
+            links: menuItems,
+            error: false
+        });
+
+    };
+
+    onError = () => {
+        this.setState({
+            error: true,
+        });
+    };
+
     getMenuItems() {
-
-        fetch("http://www.mocky.io/v2/5e6c2d2a2d000089008e9d26")
-            .then(response => response.json())
-            .then(result => {
-
-                console.dir(result);
-                this.setState({
-                    links: result.menuItems
-                })
-            })
-            .catch(error => console.log('error', error));
+        this.mockyService
+            .getMenuItems()
+            .then(this.onMenuItemsLoaded)
+            .catch(this.onError);
     }
 
     render() {
 
-        const {links} = this.state;
+        const {links, error} = this.state;
 
-        let menuItems = links.map((item, count) => {
-            const {title, url} = item;
-            let classList = "navigation__list";
-            if (!count) classList += " d-md-none";
+        console.log(error);
 
-            return (
-                <li className={classList} key={url}>
-                    <a href={url} className="navigation__link">{title}</a>
-                </li>
-            )
-        });
+        const errorMessage = error ? <ErrorIndicator/> : null;
+        const menuItems = !error ? <MenuItems menuLinks={links}/> : null;
 
         return (
             <nav className="navigation">
                 <menu className="navigation__menu">
+                    {errorMessage}
                     {menuItems}
                 </menu>
                 <a href="#"
@@ -65,4 +71,22 @@ export default class Navigation extends Component {
             </nav>
         );
     }
+};
+
+
+const MenuItems = ({menuLinks}) => {
+
+    return (
+        menuLinks.map((item, count) => {
+            const {title, url} = item;
+            let classList = "navigation__list";
+            if (!count) classList += " d-md-none";
+
+            return (
+                <li className={classList} key={url}>
+                    <a href={url} className="navigation__link">{title}</a>
+                </li>
+            )
+        })
+    )
 };

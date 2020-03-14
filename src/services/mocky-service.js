@@ -1,6 +1,6 @@
 export default class MockyService {
 
-    _apiBase = 'https://api.myjson.com/';
+    _apiBase = 'http://www.mocky.io/v2/';
 
     getResource = async (url) => {
         const res = await fetch(`${this._apiBase}${url}`, {method: 'PUT'});
@@ -13,7 +13,7 @@ export default class MockyService {
     };
 
     getMenuItems = async () => {
-        const res = await this.getResource("");
-        return res.results;
+        const res = await this.getResource("5e6c2d2a2d000089008e9d26");
+        return res.menuItems;
     };
 }
