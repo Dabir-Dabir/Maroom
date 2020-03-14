@@ -1,4 +1,5 @@
 {
+  "plugins": ["@babel/proposal-class-properties"],
   "presets": [[
     "@babel/env", {
       "corejs": 3,
