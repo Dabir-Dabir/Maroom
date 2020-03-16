@@ -44,8 +44,6 @@ export default class Navigation extends Component {
 
         const {links, error} = this.state;
 
-        console.log(error);
-
         const errorMessage = error ? <ErrorIndicator/> : null;
         const menuItems = !error ? <MenuItems menuLinks={links}/> : null;
 

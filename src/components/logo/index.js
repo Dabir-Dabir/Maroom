@@ -1,4 +1,5 @@
 import React from "react";
+import logo from './logo.png'
 import './logo.scss';
 
 const Logo = () => {
@@ -17,7 +18,7 @@ const Logo = () => {
                     </clipPath>
                 </defs>
             </svg>
-            <img src="https://i.imgur.com/h5sS9tF.png" alt="Maroom"
+            <img src={logo} alt="Maroom"
                  className="logo__desktop-img d-none d-md-block"/>
         </a>
     );
