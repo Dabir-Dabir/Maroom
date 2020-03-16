@@ -1,0 +1,73 @@
+@import '../../main';
+
+.body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $white;
+  @include Body-text-M;
+}
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  border-radius: 6px;
+  padding: 0 16px;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+
+  .btn__img {
+    position: absolute;
+    top: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+  }
+
+  &--type_outline {
+    color: $black;
+    background-color: $white;
+    border: solid 1px $gray-400;
+
+    .btn__img path {
+      fill: $black;
+    }
+  }
+
+  &--type_primary {
+    color: $white;
+    background-color: $brand-primary;
+
+    .btn__img path {
+      fill: $white;
+    }
+  }
+
+  &--size_s {
+    height: 32px;
+    @include Button-text-S;
+  }
+
+  &--size_m {
+    height: 48px;
+    @include Button-text-M;
+  }
+
+  &--display_left-icon {
+    padding-left: 44px;
+
+    .btn__img {
+      left: 14px;
+    }
+  }
+
+  &--display_right-icon {
+    padding-right: 44px;
+
+    .btn__img {
+      right: 14px;
+    }
+  }
+}
