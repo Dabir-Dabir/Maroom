@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../public/images/rectangle-3-2.png';
 import './main.scss';
 
 const Main = () => {
