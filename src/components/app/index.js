@@ -1,7 +1,7 @@
 import React from 'react';
+import './app.scss';
 import StickyHeader from '../sticky-header';
 import Main from "../main";
-import './app.scss';
 
 const App = () => {
     return (
