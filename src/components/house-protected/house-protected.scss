@@ -1,0 +1,147 @@
+@import "../../main";
+
+.house-protected {
+  padding: 0;
+  background-color: $gray-200;
+
+  &__header {
+    padding: 48px 0;
+  }
+
+  &__title {
+    margin: 0;
+    color: $black;
+    @include Heading-H2;
+  }
+
+  &__description {
+    margin: 24px 0 32px;
+    color: $black;
+    @include Body-text-M;
+  }
+
+  &__rent-button {
+    margin: 32px 0 0;
+  }
+
+  @media (min-width: 1000px) {
+
+    &__description {
+      margin-bottom: 0;
+    }
+
+    &__rent-button {
+      margin-top: 24px;
+    }
+  }
+}
+
+.numbers {
+  margin: 24px 0 0;
+
+  &__count {
+    margin: 0;
+    color: $black;
+    @include Heading-H2;
+  }
+
+  &__description {
+    margin: 8px 0 0;
+    color: $light;
+    @include Body-text-S-Medium;
+  }
+}
+
+.banner {
+  position: relative;
+  height: 544px;
+  background-color: $medium;
+  z-index: 10;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (min-width: 1000px) {
+    height: 472px;
+  }
+}
+
+.newsletters {
+  padding: 136px 0 48px;
+  background-color: #fff;
+
+  &__title {
+    margin: 0;
+    width: 100%;
+    color: $black;
+    @include Heading-H2;
+  }
+
+  @media (min-width: 1000px) {
+    padding-top: 64px;
+    background-color: $gray-200;
+
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+.subscribe {
+  position: relative;
+  margin: 24px 0 0;
+  width: 100%;
+  height: 56px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding: 16px 48px 16px 16px;
+    border: solid 1px $gray-400;
+    background-color: $white;
+    color: $medium;
+    @include Body-text-S-Medium;
+    border-radius: 6px;
+  }
+
+  &__submit {
+    position: absolute;
+    top: 12px;
+    right: 11px;
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: $gray-400;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

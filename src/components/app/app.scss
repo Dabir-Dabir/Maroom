@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   background-color: $white;
+  color: $black;
   @include Body-text-M;
 }
 
@@ -16,59 +17,79 @@
   padding: 0 16px;
   outline: none;
   text-decoration: none;
-  cursor: pointer;
   justify-content: center;
   align-items: center;
 
-  .btn__img {
+  &__img {
     position: absolute;
     top: calc(50% - 10px);
     width: 20px;
     height: 20px;
   }
 
-  &--type_outline {
-    color: $black;
-    background-color: $white;
-    border: solid 1px $gray-400;
+  &--type {
 
-    .btn__img path {
-      fill: $black;
+    &_outline {
+      color: $black;
+      background-color: $white;
+      border: solid 1px $gray-400;
+
+      .btn__img path {
+        fill: $black;
+      }
+    }
+
+    &_primary {
+      color: $white;
+      background-color: $brand-primary;
+
+      .btn__img path {
+        fill: $white;
+      }
+    }
+
+    &_info {
+      color: $brand-primary;
+      background-color: #ffecc7;
+
+      .btn__img path {
+        fill: $brand-primary;
+      }
     }
   }
 
-  &--type_primary {
-    color: $white;
-    background-color: $brand-primary;
+  &--style_section {
+    width: 100%;
+  }
 
-    .btn__img path {
-      fill: $white;
+  &--size {
+    &_s {
+      height: 32px;
+      @include Button-text-S;
+    }
+
+    &_m {
+      height: 48px;
+      @include Button-text-M;
     }
   }
 
-  &--size_s {
-    height: 32px;
-    @include Button-text-S;
-  }
+  &--display {
 
-  &--size_m {
-    height: 48px;
-    @include Button-text-M;
-  }
+    &_left-icon {
+      padding-left: 44px;
 
-  &--display_left-icon {
-    padding-left: 44px;
-
-    .btn__img {
-      left: 14px;
+      .btn__img {
+        left: 14px;
+      }
     }
-  }
 
-  &--display_right-icon {
-    padding-right: 44px;
+    &_right-icon {
+      padding-right: 44px;
 
-    .btn__img {
-      right: 14px;
+      .btn__img {
+        right: 14px;
+      }
     }
   }
 }
