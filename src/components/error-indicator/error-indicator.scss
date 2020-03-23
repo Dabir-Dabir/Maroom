@@ -1,7 +1,8 @@
 @import "../../main";
 
 .error-indicator {
-  display: inline-block;
+  display: block;
+  text-align: center;
   width: 100%;
   color: $error-color;
   @include body-text-S-medium;

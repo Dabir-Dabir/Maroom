@@ -1,9 +1,49 @@
-{
-"menuItems": [
-    {"title": "Главная", "url": "home"},
-    {"title": "Сдать", "url": "give-to-rent"},
-    {"title": "Снять", "url": "rent"},
-    {"title": "О сервисе", "url": "about"},
-    {"title": "Блог", "url": "blog"}
-]
-}
+//{
+//"menuItems": [
+//    {"title": "Главная", "url": "home"},
+//    {"title": "Сдать", "url": "give-to-rent"},
+//    {"title": "Снять", "url": "rent"},
+//    {"title": "О сервисе", "url": "about"},
+//    {"title": "Блог", "url": "blog"}
+//]
+//}
+
+//{
+//    "id": 94,
+//    "cardData": {
+//        "order": {
+//            "order": 49,
+//            "all": 49
+//        },
+//        "title": "Peterburg 23",
+//        "street": "Kol'tsevaya",
+//        "distance": "5 мин. пешком",
+//        "rooms": 23,
+//        "square": "40 / 20 м²",
+//        "flor": "12 / 14",
+//        "price": "25 000 ₽"
+//    },
+//}
+
+//{
+//    "id": 3,
+//    "cardData": {
+//        "order": {
+//            "order": 1,
+//            "all": 49
+//        },
+//        "title": "Moscow Ave, 37",
+//        "street": "Kol'tsevaya",
+//        "distance": "5 мин. пешком",
+//        "rooms": 22,
+//        "square": "50 / 25 м²",
+//        "flor": "10 / 16",
+//        "price": "30 000 ₽"
+//    }
+//}
+
+//{
+//    "flatCount" : 179,
+//    "hoursCount": 1485,
+//    "yearsCount": "5+"
+//}

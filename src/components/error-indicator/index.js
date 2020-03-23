@@ -1,13 +1,4 @@
-import React from 'react';
-
 import './error-indicator.scss';
+import ErrorIndicatior from './error-indicator';
 
-const ErrorIndicator = () => {
-    return (
-        <div className="error-indicator">
-            Не получилось получить данные!
-        </div>
-    );
-};
-
-export default ErrorIndicator;
+export default ErrorIndicatior;
